@@ -27,7 +27,7 @@ export default function ListingItem({ listing }) {
             {listing.description}
           </p>
           <p className='text-slate-500 mt-2 font-semibold '>
-            $
+            Ksh
             {listing.offer
               ? listing.discountPrice.toLocaleString('en-US')
               : listing.regularPrice.toLocaleString('en-US')}
@@ -35,12 +35,12 @@ export default function ListingItem({ listing }) {
           </p>
           <div className='text-slate-700 flex gap-4'>
             <div className='font-bold text-xs'>
-              {listing.bedrooms > 1
+              {listing.bedrooms > 0
                 ? `${listing.bedrooms} beds `
                 : `${listing.bedrooms} bed `}
             </div>
             <div className='font-bold text-xs'>
-              {listing.bathrooms > 1
+              {listing.bathrooms > 0
                 ? `${listing.bathrooms} baths `
                 : `${listing.bathrooms} bath `}
             </div>

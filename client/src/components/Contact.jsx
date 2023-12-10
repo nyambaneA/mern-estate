@@ -45,7 +45,12 @@ export default function Contact({ listing }) {
           >
             Send Message          
           </Link>
+          <h3>OR</h3>
+          <div className='bg-slate-700 text-white text-center p-3 uppercase rounded-lg hover:opacity-95'><a href=''></a>Call/send text/WhatsApp:Alfred Anari: 0727903969, Alfred Nyambane: 0707615635, Jeremiah Moindi: 0711280760</div>
+          <h3>OR</h3>
+          <div className='bg-slate-700 text-white text-center p-3 uppercase rounded-lg hover:opacity-95'><a href='https://wa.me/+254707615635' target="_blank">WhatsApp</a></div>
         </div>
+        
       )}
     </>
   );
